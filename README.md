@@ -40,7 +40,7 @@ If you like this project, please give it a star on GitHub! ⭐
 
 <div align="center">
     <a href="#header">
-       Go to Top
+       Go to Top!
     </a>
 </div>
 
