@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mediaQueries.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/pay.css">
 
     <!-- link to add favicon -->
     <link rel="icon" href="./images/logo.png" type="image/png">
@@ -59,7 +60,29 @@
                 </ul>
                 <div>
                     <div class="total">Sub Total: <span class="sub-total">$0</span></div>
-                    <button>Check out</button>
+                    
+                    <div class="container">
+                        <button id = "openPopup">Check out</button>
+                    </div>
+                    <div id="popup" class="popup hidden">
+                        <div class="popup-content">
+                            <span class="close-btn" onclick="closePopup()">&times;</span>
+                            <h1>Choose Payment Method</h1>
+                            <button onclick="selectPayment('Offline')">Offline Payment</button>
+                            <button onclick="selectPayment('Online')">Online Payment</button>
+                
+                            <div id="online-options" class="hidden">
+                                <h2>Select Online Method</h2>
+                                <button onclick="showQRCode()">GPay</button>
+                                
+                                <!-- QR Code Section -->
+                                <div id="qr-code" class="hidden">
+                                    <h3>Scan to Pay with GPay</h3>
+                                    <img src="images/gpay.jpeg" alt="GPay QR Code">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -186,6 +209,7 @@
         </section>
 
 
+
     </div>
 
     <script src="script/swiper-bundle.min.js"></script>
@@ -194,6 +218,7 @@
     <script type="module" src="script/products.js"></script>
     <script type="module" src="script/nav.js"></script>
     <script type="module" src="script/cart.js"></script>
+    <script src="script/payment.js"></script>
 </body>
 
 </html>
