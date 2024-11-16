@@ -6,89 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IcyCo Ice Cream</title>
 
-    <!-- custom style sheets -->
+    <!-- Custom style sheets -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mediaQueries.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
 
-    <!-- link to add favicon -->
+    <!-- Favicon -->
     <link rel="icon" href="./images/logo.png" type="image/png">
 
-    <!-- font awesome icons script -->
+    <!-- Font Awesome icons -->
     <script src="https://kit.fontawesome.com/c732ec9339.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
 
-        <!-- nav bar -->
+        <!-- Navbar -->
         <div class="nav-bar">
             <div class="logo">
                 <img src="./images/logo.png" alt="icyco-logo" height="25px" width="25px">
-                <a href="">IcyCo</a>
+                <a href="#">IcyCo</a>
             </div>
             <div class="nav-links">
-                <a href="#home" class="link active">home</a>
-                <a href="#services" class="link">services</a>
-                <a href="#about" class="link">about</a>
-                <a href="#products" class="link">products</a>
-                <a href="#reviews" class="link">reviews</a>
-                <a href="#contact" class="link">contact</a>
+                <a href="#home" class="link active">Home</a>
+                <a href="#services" class="link">Services</a>
+                <a href="#about" class="link">About</a>
+                <a href="#products" class="link">Products</a>
+                <a href="#reviews" class="link">Reviews</a>
+                <a href="#contact" class="link">Contact</a>
             </div>
             <div class="icons">
-                <div class="icon">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-                <div class="icon">
-                    <span class="i"><i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i> <span
-                            class="no-of-cart-items">0</span></span>
-                </div>
-                <div class="icon">
-                    <i class="fa fa-bars menu" aria-hidden="true" onclick="controlMenu()"></i>
-                </div>
+                <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-bars menu" aria-hidden="true" onclick="controlMenu()"></i></div>
             </div>
         </div>
 
-        <!-- Cart -->
-        <div class="cart">
-            <i class="fa fa-times close-cart" aria-hidden="true"></i>
-            <h1>Your Cart</h1>
-
-            <div class="no-empty-cart">
-                <ul class="cart-list-items">
-                </ul>
-                <div>
-                    <div class="total">Sub Total: <span class="sub-total">$0</span></div>
-                    <button>Check out</button>
-                </div>
-
-            </div>
-
-            <div class="empty-cart active">
-                <p>No items in the cart!</p>
-            </div>
-
-        </div>
-
-        <!-- Hero -->
+        <!-- Hero Section -->
         <section class="home" id="home">
-            <!-- <img src="./images/design1.png" class="design1">
-            <img src="./images/design2.png" class="design2">
-            <img src="./images/design1.png" class="design3"> -->
             <div class="text">
                 <h1>Scoop into Happiness, Anytime, Anywhere!</h1>
                 <h4>Welcome to the frozen feast, where the world of frozen delights comes alive! Get ready to embark on
-                    a mouthwatering journey through a virtual ice cream paradise. Whether you’re craving a cozy in-store
-                    treat, delivery to your doorstep, or a custom ice cream experience at your next event, we’re here to
-                    serve you the sweetest moments, wherever you are.</h4>
+                    a mouthwatering journey.</h4>
             </div>
             <div class="image">
-                <img src="images/Hero1.png" alt="">
+                <img src="images/Hero1.png" alt="Ice Cream">
             </div>
         </section>
-
-        <!-- Services -->
-        <section class="services" id="services">
+          <!-- Services -->
+          <section class="services" id="services">
             <h1>What <span>we do?</span></h1>
             <div class="services-card-wrapper">
                 <div class="service-card">
@@ -185,13 +151,47 @@
             </div>
         </section>
 
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <h1>What Our Customers Say</h1>
+            <div class="reviews-container">
+                <!-- Review List -->
+                <div class="review-list">
+                    <div class="review">
+                        <p>"Best ice cream I've ever had! The delivery was fast and the ice cream was still frozen!"</p>
+                        <span>- Sarah L.</span>
+                    </div>
+                    <div class="review">
+                        <p>"I love the variety of flavors and the friendly atmosphere. Definitely my go-to place!"</p>
+                        <span>- James T.</span>
+                    </div>
+                    <div class="review">
+                        <p>"The ice cream catering service was a hit at our event. Everyone loved it!"</p>
+                        <span>- Emma W.</span>
+                    </div>
+                </div>
+
+                <!-- Review Form -->
+                <div class="review-form">
+                    <h2>Leave a Review</h2>
+                    <form id="reviewForm">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="review">Your Review</label>
+                        <textarea id="review" name="review" rows="4" required></textarea>
+
+                        <button type="submit">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
     </div>
 
     <script src="script/swiper-bundle.min.js"></script>
     <script src="script/reviews.js"></script>
     <script src="script/form.js"></script>
-    <script type="module" src="script/products.js"></script>
     <script type="module" src="script/nav.js"></script>
     <script type="module" src="script/cart.js"></script>
 </body>
