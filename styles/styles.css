@@ -814,7 +814,7 @@ h3 {
 }
 
 .reviews .reviews-box .box:hover {
-    /* background-color: var(--secondary-color); */
+    background-color: var(--secondary-color);
 }
 
 .reviews .reviews-box .box .top {
