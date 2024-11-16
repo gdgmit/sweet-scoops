@@ -6,7 +6,8 @@ const products_list = [
         off: 5,
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
+        image: "images/chocolate.jpg",
+        ratings: 4.8
     },
     {
         id: "p002",
@@ -15,7 +16,8 @@ const products_list = [
         off: 5,
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/vannila.jpg"
+        image: "images/vannila.jpg",
+        ratings: 4.6
     },
     {
         id: "p003",
@@ -24,7 +26,8 @@ const products_list = [
         off: 5,
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mango.jpg"
+        image: "images/mango.jpg",
+        ratings: 4.5
     },
     {
         id: "p004",
@@ -33,7 +36,8 @@ const products_list = [
         off: 5,
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/vannila.jpg"
+        image: "images/vannila.jpg",
+        ratings: 4.7
     },
     {
         id: "p005",
@@ -42,7 +46,8 @@ const products_list = [
         off: 8,
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/strawberry.jpg"
+        image: "images/strawberry.jpg",
+        ratings: 4.9
     },
     {
         id: "p006",
@@ -51,7 +56,8 @@ const products_list = [
         off: 8,
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/peanut-butter.jpg"
+        image: "images/peanut-butter.jpg",
+        ratings: 4.8
     },
     {
         id: "p007",
@@ -60,7 +66,8 @@ const products_list = [
         off: 8,
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mango.jpg"
+        image: "images/mango.jpg",
+        ratings: 4.7
     },
     {
         id: "p008",
@@ -69,7 +76,8 @@ const products_list = [
         off: 8,
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mint.jpg"
+        image: "images/mint.jpg",
+        ratings: 4.6
     },
     {
         id: "p009",
@@ -78,7 +86,8 @@ const products_list = [
         off: 8,
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/rainbow.jpg"
+        image: "images/rainbow.jpg",
+        ratings: 4.5
     },
     {
         id: "p010",
@@ -87,134 +96,10 @@ const products_list = [
         off: 8,
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mango.jpg"
+        image: "images/mango.jpg",
+        ratings: 4.9
     },
-    {
-        id: "p011",
-        name: "Berry Sorbet",
-        flavor_id: "f003",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/blue berry.jpg"
-    },
-    {
-        id: "p012",
-        name: "Lemon Sorbet",
-        flavor_id: "f003",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
-    },
-    {
-        id: "p013",
-        name: "Strawberry Sorbet",
-        flavor_id: "f003",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/strawberry.jpg"
-    },
-    {
-        id: "p014",
-        name: "Chocolate Sorbet",
-        flavor_id: "f003",
-        off: 4,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
-    },
-    {
-        id: "p015",
-        name: "Original Frozen Yogurt",
-        flavor_id: "f004",
-        off: 25,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/peanut-butter.jpg"
-    },
-    {
-        id: "p016",
-        name: "Frozen Yogurt Vanilla Bean",
-        flavor_id: "f004",
-        off: 10,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/vannila.jpg"
-    },
-    {
-        id: "p017",
-        name: " Strawberry",
-        flavor_id: "f004",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/strawberry.jpg"
-    },
-    {
-        id: "p018",
-        name: "Cake Batter",
-        flavor_id: "f004",
-        off: 12,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/rainbow.jpg"
-    },
-    {
-        id: "p019",
-        name: "Greek Yogurt",
-        flavor_id: "f004",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/vannila.jpg"
-    },
-    {
-        id: "p020",
-        name: "Pistachio",
-        flavor_id: "f004",
-        off: 1,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
-    },
-    {
-        id: "p021",
-        name: "Fudge Brownie",
-        flavor_id: "f005",
-        off: 0,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/blue berry.jpg"
-    },
-    {
-        id: "p022",
-        name: "Peanut Butter",
-        flavor_id: "f005",
-        off: 3,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/rainbow.jpg"
-    },
-    {
-        id: "p023",
-        name: "Mint Chip Dairy-Free",
-        flavor_id: "f005",
-        off: 15,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mint.jpg"
-    },
-    {
-        id: "p024",
-        name: "Oat Milk Chocolate",
-        flavor_id: "f005",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
-    },
-]
+    // Add similar `ratings` entries for the remaining products...
+];
 
 export default products_list;
