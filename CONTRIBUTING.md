@@ -1,7 +1,7 @@
 ### **`CONTRIBUTING.md`**
 # Contributing to Stark Tech Portfolio
 
-Thank you for considering contributing to the **Stark Tech Portfolio** project, a tribute to Iron Man! Your contributions help improve the project, whether through bug fixes, feature additions, or documentation updates. To ensure smooth collaboration, please follow the guidelines below.
+Thank you for considering contributing to the **Stark Tech Portfolio** project, a tribute to Iron Man! Your contributions help improve the project, whether through bug fixes, feature additions, or documentation updates. To ensure smooth collaboration, please follow the guidelines below
 
 ## How to Contribute
 
