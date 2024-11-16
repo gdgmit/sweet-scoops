@@ -7,7 +7,14 @@ const products_list = [
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/chocolate.jpg",
-        ratings: 4.8
+        ratings: 4.8,
+        reviews: 120,
+        nutritional_info: {
+            calories: 150,
+            fat: 8,
+            carbs: 18,
+            protein: 2
+        }
     },
     {
         id: "p002",
@@ -17,7 +24,14 @@ const products_list = [
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/vannila.jpg",
-        ratings: 4.6
+        ratings: 4.6,
+        reviews: 95,
+        nutritional_info: {
+            calories: 200,
+            fat: 11,
+            carbs: 24,
+            protein: 3
+        }
     },
     {
         id: "p003",
@@ -27,7 +41,14 @@ const products_list = [
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/mango.jpg",
-        ratings: 4.5
+        ratings: 4.5,
+        reviews: 150,
+        nutritional_info: {
+            calories: 180,
+            fat: 9,
+            carbs: 21,
+            protein: 2
+        }
     },
     {
         id: "p004",
@@ -37,7 +58,14 @@ const products_list = [
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/vannila.jpg",
-        ratings: 4.7
+        ratings: 4.7,
+        reviews: 130,
+        nutritional_info: {
+            calories: 220,
+            fat: 12,
+            carbs: 25,
+            protein: 3
+        }
     },
     {
         id: "p005",
@@ -47,7 +75,14 @@ const products_list = [
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/strawberry.jpg",
-        ratings: 4.9
+        ratings: 4.9,
+        reviews: 200,
+        nutritional_info: {
+            calories: 250,
+            fat: 15,
+            carbs: 27,
+            protein: 4
+        }
     },
     {
         id: "p006",
@@ -57,7 +92,14 @@ const products_list = [
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/peanut-butter.jpg",
-        ratings: 4.8
+        ratings: 4.8,
+        reviews: 160,
+        nutritional_info: {
+            calories: 240,
+            fat: 14,
+            carbs: 26,
+            protein: 5
+        }
     },
     {
         id: "p007",
@@ -67,7 +109,14 @@ const products_list = [
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/mango.jpg",
-        ratings: 4.7
+        ratings: 4.7,
+        reviews: 180,
+        nutritional_info: {
+            calories: 230,
+            fat: 13,
+            carbs: 22,
+            protein: 6
+        }
     },
     {
         id: "p008",
@@ -77,7 +126,14 @@ const products_list = [
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/mint.jpg",
-        ratings: 4.6
+        ratings: 4.6,
+        reviews: 140,
+        nutritional_info: {
+            calories: 210,
+            fat: 12,
+            carbs: 24,
+            protein: 3
+        }
     },
     {
         id: "p009",
@@ -87,7 +143,14 @@ const products_list = [
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/rainbow.jpg",
-        ratings: 4.5
+        ratings: 4.5,
+        reviews: 110,
+        nutritional_info: {
+            calories: 180,
+            fat: 9,
+            carbs: 22,
+            protein: 2
+        }
     },
     {
         id: "p010",
@@ -97,9 +160,15 @@ const products_list = [
         price: 50,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
         image: "images/mango.jpg",
-        ratings: 4.9
+        ratings: 4.9,
+        reviews: 190,
+        nutritional_info: {
+            calories: 170,
+            fat: 8,
+            carbs: 20,
+            protein: 1
+        }
     },
-    // Add similar `ratings` entries for the remaining products...
+    // Continue similarly for the other products...
 ];
-
 export default products_list;
