@@ -27,3 +27,31 @@ var swiper = new Swiper(".reviews-box", {
         },
     },
 });
+// Handle review form submission
+document.getElementById('review-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from reloading the page
+
+    // Get the values from the form
+    const name = document.getElementById('name').value;
+    const rating = document.querySelector('input[name="rating"]:checked').value;
+    const reviewText = document.getElementById('review-text').value;
+
+    // Create a new review item
+    const newReview = document.createElement('div');
+    newReview.classList.add('review-item');
+    newReview.innerHTML = `
+        <div class="review-header">
+            <div class="reviewer-name">${name}</div>
+            <div class="review-rating">${'★'.repeat(rating)}</div>
+        </div>
+        <div class="review-text">
+            <p>${reviewText}</p>
+        </div>
+    `;
+
+    // Append the new review to the review list
+    document.querySelector('.reviews-list').prepend(newReview);
+
+    // Reset the form
+    document.getElementById('review-form').reset();
+});
