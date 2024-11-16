@@ -306,6 +306,22 @@ h3 {
     padding-top: 25%;
 
 }
+.ratings {
+    font-size: 1rem;
+    color: #f4b400; /* Gold star color */
+    margin: 5px 0;
+}
+.nutrition ul,
+.reviews ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+.nutrition li,
+.reviews li {
+    font-size: 0.9rem;
+    margin: 3px 0;
+}
 
 .cart .empty-cart.active {
     display: inline;
