@@ -27,33 +27,39 @@ var swiper = new Swiper(".reviews-box", {
         },
     },
 });
+// Wait for the DOM content to load
 document.addEventListener('DOMContentLoaded', () => {
-    const reviewForm = document.getElementById('reviewForm');
-    const reviewList = document.querySelector('.review-list');
+    const reviewForm = document.getElementById('review-form'); // Ensure the correct form ID
+    const reviewList = document.querySelector('.reviews-list'); // Use the correct class for the review list
 
-    reviewForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+    // Handle review form submission
+    reviewForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent form from reloading the page
 
+        // Get the values from the form
         const name = document.getElementById('name').value;
-        const reviewText = document.getElementById('review').value;
+        const rating = document.querySelector('input[name="rating"]:checked')?.value || 0; // Handle no rating case
+        const reviewText = document.getElementById('review-text').value;
 
-        // Create new review elements
+        // Create a new review item
         const reviewDiv = document.createElement('div');
-        reviewDiv.classList.add('review');
+        reviewDiv.classList.add('review-item');
+        reviewDiv.innerHTML = `
+            <div class="review-header">
+                <div class="reviewer-name">${name}</div>
+                <div class="review-rating">${'★'.repeat(rating)}</div>
+            </div>
+            <div class="review-text">
+                <p>${reviewText}</p>
+            </div>
+        `;
 
-        const reviewContent = document.createElement('p');
-        reviewContent.textContent = `"${reviewText}"`;
+        // Append the new review to the review list
+        reviewList.prepend(reviewDiv);
 
-        const reviewAuthor = document.createElement('span');
-        reviewAuthor.textContent = `- ${name}`;
-
-        reviewDiv.appendChild(reviewContent);
-        reviewDiv.appendChild(reviewAuthor);
-
-        // Append new review to the list
-        reviewList.appendChild(reviewDiv);
-
-        // Clear the form fields
+        // Reset the form fields
         reviewForm.reset();
     });
+});
+
 });

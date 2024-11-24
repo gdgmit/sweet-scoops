@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mediaQueries.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
-    <link rel="stylesheet" href="styles/pay.css">
+<link rel="stylesheet" href="styles/review.css">
+<link rel="stylesheet" href="styles/pay.css">
 
     <!-- Favicon -->
     <link rel="icon" href="./images/logo.png" type="image/png">
 
     <!-- Font Awesome icons -->
     <script src="https://kit.fontawesome.com/c732ec9339.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -167,8 +169,84 @@
                     <a href="#"><i class="fa fa-twitter"></i></a>
                 </div>
             </div>
-            <p class="footer-credit">© 2024 IcyCo Ice Cream. All rights reserved.</p>
-        </footer>
+<section class="reviews" id="reviews">
+    <h1>What Our Customers Are Saying</h1>
+
+    <!-- Reviews List -->
+    <div class="reviews-list">
+        <!-- Example review -->
+        <div class="review-item">
+            <div class="review-header">
+                <div class="reviewer-name">John Doe</div>
+                <div class="review-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>"The ice cream is absolutely amazing! The flavors are unique, and the texture is so creamy. I love visiting IcyCo!"</p>
+            </div>
+        </div>
+
+        <div class="review-item">
+            <div class="review-header">
+                <div class="reviewer-name">Jane Smith</div>
+                <div class="review-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>"Best ice cream place in town! Their delivery is super fast, and my kids love it. Highly recommend the chocolate chip cookie dough flavor!"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Submission Form -->
+    <div class="review-form">
+        <h2>Share Your Review</h2>
+        <form id="review-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5"><i class="fa fa-star"></i></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4"><i class="fa fa-star"></i></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3"><i class="fa fa-star"></i></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2"><i class="fa fa-star"></i></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1"><i class="fa fa-star"></i></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="review-text">Your Review</label>
+                <textarea id="review-text" name="review-text" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-review">Submit Review</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p class="footer-credit">© 2024 IcyCo Ice Cream. All rights reserved.</p>
+</footer>
 
     </div>
 
@@ -177,7 +255,89 @@
     <script src="script/form.js"></script>
     <script type="module" src="script/nav.js"></script>
     <script type="module" src="script/cart.js"></script>
-    <script src="script/payment.js"></script>
+<!-- Reviews Section -->
+<section class="reviews" id="reviews">
+    <h1>What Our Customers Are Saying</h1>
+
+    <!-- Reviews List -->
+    <div class="reviews-list">
+        <!-- Example review -->
+        <div class="review-item">
+            <div class="review-header">
+                <div class="reviewer-name">John Doe</div>
+                <div class="review-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>"The ice cream is absolutely amazing! The flavors are unique, and the texture is so creamy. I love visiting IcyCo!"</p>
+            </div>
+        </div>
+
+        <div class="review-item">
+            <div class="review-header">
+                <div class="reviewer-name">Jane Smith</div>
+                <div class="review-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>"Best ice cream place in town! Their delivery is super fast, and my kids love it. Highly recommend the chocolate chip cookie dough flavor!"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Submission Form -->
+    <div class="review-form">
+        <h2>Share Your Review</h2>
+        <form id="review-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5"><i class="fa fa-star"></i></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4"><i class="fa fa-star"></i></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3"><i class="fa fa-star"></i></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2"><i class="fa fa-star"></i></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1"><i class="fa fa-star"></i></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="review-text">Your Review</label>
+                <textarea id="review-text" name="review-text" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-review">Submit Review</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p class="footer-credit">© 2024 IcyCo Ice Cream. All rights reserved.</p>
+</footer>
+
+<!-- Script -->
+<script src="script/payment.js"></script>
+
 </body>
 
 </html>

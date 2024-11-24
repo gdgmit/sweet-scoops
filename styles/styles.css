@@ -813,9 +813,14 @@ h3 {
     transition: 0.3s;
 }
 
+/* .reviews .reviews-box .box:hover {
+    /* background-color: var(--secondary-color); */
+ */
+=======
 .reviews .reviews-box .box:hover {
     background-color: var(--secondary-color);
 }
+
 
 .reviews .reviews-box .box .top {
     width: 100%;
