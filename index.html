@@ -6,47 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IcyCo Ice Cream</title>
 
-    <!-- custom style sheets -->
+    <!-- Custom style sheets -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mediaQueries.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/pay.css">
 
-    <!-- link to add favicon -->
+    <!-- Favicon -->
     <link rel="icon" href="./images/logo.png" type="image/png">
 
-    <!-- font awesome icons script -->
+    <!-- Font Awesome icons -->
     <script src="https://kit.fontawesome.com/c732ec9339.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
 
-        <!-- nav bar -->
+        <!-- Navbar -->
         <div class="nav-bar">
             <div class="logo">
                 <img src="./images/logo.png" alt="icyco-logo" height="25px" width="25px">
-                <a href="">IcyCo</a>
+                <a href="#">IcyCo</a>
             </div>
             <div class="nav-links">
-                <a href="#home" class="link active">home</a>
-                <a href="#services" class="link">services</a>
-                <a href="#about" class="link">about</a>
-                <a href="#products" class="link">products</a>
-                <a href="#reviews" class="link">reviews</a>
-                <a href="#contact" class="link">contact</a>
+                <a href="#home" class="link active">Home</a>
+                <a href="#services" class="link">Services</a>
+                <a href="#about" class="link">About</a>
+                <a href="#products" class="link">Products</a>
+                <a href="#reviews" class="link">Reviews</a>
+                <a href="#contact" class="link">Contact</a>
             </div>
             <div class="icons">
-                <div class="icon">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-                <div class="icon">
-                    <span class="i"><i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i> <span
-                            class="no-of-cart-items">0</span></span>
-                </div>
-                <div class="icon">
-                    <i class="fa fa-bars menu" aria-hidden="true" onclick="controlMenu()"></i>
-                </div>
+                <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-shopping-cart cart-icon" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-bars menu" aria-hidden="true" onclick="controlMenu()"></i></div>
             </div>
         </div>
 
@@ -56,13 +49,11 @@
             <h1>Your Cart</h1>
 
             <div class="no-empty-cart">
-                <ul class="cart-list-items">
-                </ul>
+                <ul class="cart-list-items"></ul>
                 <div>
                     <div class="total">Sub Total: <span class="sub-total">$0</span></div>
-                    
                     <div class="container">
-                        <button id = "openPopup">Check out</button>
+                        <button id="openPopup">Check out</button>
                     </div>
                     <div id="popup" class="popup hidden">
                         <div class="popup-content">
@@ -70,11 +61,11 @@
                             <h1>Choose Payment Method</h1>
                             <button onclick="selectPayment('Offline')">Offline Payment</button>
                             <button onclick="selectPayment('Online')">Online Payment</button>
-                
+
                             <div id="online-options" class="hidden">
                                 <h2>Select Online Method</h2>
                                 <button onclick="showQRCode()">GPay</button>
-                                
+
                                 <!-- QR Code Section -->
                                 <div id="qr-code" class="hidden">
                                     <h3>Scan to Pay with GPay</h3>
@@ -84,29 +75,21 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="empty-cart active">
                 <p>No items in the cart!</p>
             </div>
-
         </div>
 
-        <!-- Hero -->
+        <!-- Hero Section -->
         <section class="home" id="home">
-            <!-- <img src="./images/design1.png" class="design1">
-            <img src="./images/design2.png" class="design2">
-            <img src="./images/design1.png" class="design3"> -->
             <div class="text">
                 <h1>Scoop into Happiness, Anytime, Anywhere!</h1>
-                <h4>Welcome to the frozen feast, where the world of frozen delights comes alive! Get ready to embark on
-                    a mouthwatering journey through a virtual ice cream paradise. Whether you’re craving a cozy in-store
-                    treat, delivery to your doorstep, or a custom ice cream experience at your next event, we’re here to
-                    serve you the sweetest moments, wherever you are.</h4>
+                <h4>Welcome to the frozen feast, where the world of frozen delights comes alive! Get ready to embark on a mouthwatering journey.</h4>
             </div>
             <div class="image">
-                <img src="images/Hero1.png" alt="">
+                <img src="images/Hero1.png" alt="Ice Cream">
             </div>
         </section>
 
@@ -119,11 +102,8 @@
                         <h2>Dine-In</h2>
                         <h3>Chill With Us – Indulge In-Store</h3>
                         <img src="./images/dine in.png" height="150px" width="150px">
-                        <p>Whether you're enjoying a family outing, a date, or a treat just for yourself, our dine-in
-                            experience is the perfect way to savor handcrafted scoops, decadent sundaes, and custom
-                            creations.</p>
-                        <button>Find the nearest store to you <i class="fa fa-arrow-right"
-                                aria-hidden="true"></i></button>
+                        <p>Whether you're enjoying a family outing, a date, or a treat just for yourself, our dine-in experience is the perfect way to savor handcrafted scoops, decadent sundaes, and custom creations.</p>
+                        <button>Find the nearest store to you <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="service-card">
@@ -131,9 +111,7 @@
                         <h2>Island-Wide Delivery</h2>
                         <h3>Ice Cream On the Go – Delivered to Your Door</h3>
                         <img src="./images/delivary.png" height="150px" width="150px">
-                        <p>Whether it’s a late-night craving or a sweet surprise for someone special, we’ll bring
-                            freshly scooped goodness straight to your doorstep – fast, fresh, and frozen to perfection.
-                        </p>
+                        <p>Whether it’s a late-night craving or a sweet surprise for someone special, we’ll bring freshly scooped goodness straight to your doorstep – fast, fresh, and frozen to perfection.</p>
                         <button>Enter your address <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
@@ -142,15 +120,11 @@
                         <h2>Catering</h2>
                         <h3>Sweeten Your Event – Ice Cream Catering</h3>
                         <img src="./images/event.png" height="150px" width="150px">
-                        <p>Whether it's a birthday party, wedding, corporate event, or any celebration, we provide
-                            custom ice cream bars, sundae stations, or full-service catering to keep your guests
-                            delighted. </p>
+                        <p>Whether it's a birthday party, wedding, corporate event, or any celebration, we provide custom ice cream bars, sundae stations, or full-service catering to keep your guests delighted.</p>
                         <button>Tell us about your event <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
-
             </div>
-
         </section>
 
         <!-- About -->
@@ -162,71 +136,18 @@
                 </div>
                 <div class="box text">
                     <h2>Get The Cool Down With Our Creamy Creations!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id quam totam nihil laudantium
-                        assumenda cumque explicabo, placeat nisi delectus consequuntur itaque quod obcaecati cum sint
-                        veritatis quo qui aliquid dolorem labore atque ad? animi? odio tempore, doloremque, illo dolorem
-                        commodi similique aspernatur eos. Cumque repudiandae nemo hic quo beatae a ab debitis libero
-                        porro.</p>
+                    <p>We offer a wide range of delicious ice cream flavors, all made under strict hygiene and food safety conditions. Join us for a fun and friendly atmosphere perfect for all ages.</p>
                     <ul>
-                        <li>
-                            <div class="feature-icon"><i class="fa fa-list-alt" aria-hidden="true"></i></div>
-                            <span><span>Range of flavours</span> from our parlour for <span>Dine-in</span> and
-                                <span>Take-out</span> options</span>
-                        </li>
-                        <li>
-                        <li>
-                            <div class="feature-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
-                            <span>Manufactured under <span>strict hygiene</span> and <span>food safety
-                                    conditions</span></span>
-                        </li>
-                        <li>
-                        <li>
-                            <div class="feature-icon"><i class="fa fa-snowflake-o" aria-hidden="true"></i></div>
-                            <span><span>Best quality ingredients</span> from globally and locally recognized
-                                suppliers</span>
-                        </li>
-                        <li>
-                        <li>
-                            <div class="feature-icon"><i class="fa fa-smile-o" aria-hidden="true"></i></div>
-                            <span>A welcoming space for families, offering a fun and <span>friendly atmosphere</span>
-                                for all ages.</span>
-                        </li>
+                        <li><i class="fa fa-list-alt" aria-hidden="true"></i> Wide range of flavors for dine-in and take-out</li>
+                        <li><i class="fa fa-handshake-o" aria-hidden="true"></i> Strict hygiene and food safety standards</li>
+                        <li><i class="fa fa-snowflake-o" aria-hidden="true"></i> High-quality ingredients</li>
+                        <li><i class="fa fa-smile-o" aria-hidden="true"></i> Welcoming and fun environment for families</li>
                     </ul>
-
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Products -->
-        <section class="products" id="products">
-            <h1>Our <span>Products</span></h1>
-            <div class="categories-wrapper">
-                <!-- <button class="active" id="all">All</button> -->
-            </div>
-            <div class="box-container products-box">
-            </div>
-        </section>
-        <section class="reviews" id="reviews">
-            <h1>What Our <span>Customers Say</span></h1>
-            <div class="reviews-container">
-                <div class="review-card">
-                    <p>"Absolutely love the ice cream here! The flavors are so rich and creamy. I can't wait to come
-                        back!"</p>
-                    <span>- Sarah M.</span>
-                </div>
-                <div class="review-card">
-                    <p>"Best ice cream delivery ever! Arrived frozen and delicious. The sundaes are a must-try."</p>
-                    <span>- John D.</span>
-                </div>
-                <div class="review-card">
-                    <p>"They made my birthday party unforgettable with their catering service. Highly recommend it!"</p>
-                    <span>- Emily R.</span>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section (Footer) -->
+        <!-- Footer -->
         <footer id="contact">
             <div class="footer-container">
                 <div class="footer-about">
@@ -249,13 +170,11 @@
             <p class="footer-credit">© 2024 IcyCo Ice Cream. All rights reserved.</p>
         </footer>
 
-
     </div>
 
     <script src="script/swiper-bundle.min.js"></script>
     <script src="script/reviews.js"></script>
     <script src="script/form.js"></script>
-    <script type="module" src="script/products.js"></script>
     <script type="module" src="script/nav.js"></script>
     <script type="module" src="script/cart.js"></script>
     <script src="script/payment.js"></script>
