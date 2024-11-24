@@ -27,31 +27,39 @@ var swiper = new Swiper(".reviews-box", {
         },
     },
 });
-// Handle review form submission
-document.getElementById('review-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from reloading the page
+// Wait for the DOM content to load
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewForm = document.getElementById('review-form'); // Ensure the correct form ID
+    const reviewList = document.querySelector('.reviews-list'); // Use the correct class for the review list
 
-    // Get the values from the form
-    const name = document.getElementById('name').value;
-    const rating = document.querySelector('input[name="rating"]:checked').value;
-    const reviewText = document.getElementById('review-text').value;
+    // Handle review form submission
+    reviewForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent form from reloading the page
 
-    // Create a new review item
-    const newReview = document.createElement('div');
-    newReview.classList.add('review-item');
-    newReview.innerHTML = `
-        <div class="review-header">
-            <div class="reviewer-name">${name}</div>
-            <div class="review-rating">${'★'.repeat(rating)}</div>
-        </div>
-        <div class="review-text">
-            <p>${reviewText}</p>
-        </div>
-    `;
+        // Get the values from the form
+        const name = document.getElementById('name').value;
+        const rating = document.querySelector('input[name="rating"]:checked')?.value || 0; // Handle no rating case
+        const reviewText = document.getElementById('review-text').value;
 
-    // Append the new review to the review list
-    document.querySelector('.reviews-list').prepend(newReview);
+        // Create a new review item
+        const reviewDiv = document.createElement('div');
+        reviewDiv.classList.add('review-item');
+        reviewDiv.innerHTML = `
+            <div class="review-header">
+                <div class="reviewer-name">${name}</div>
+                <div class="review-rating">${'★'.repeat(rating)}</div>
+            </div>
+            <div class="review-text">
+                <p>${reviewText}</p>
+            </div>
+        `;
 
-    // Reset the form
-    document.getElementById('review-form').reset();
+        // Append the new review to the review list
+        reviewList.prepend(reviewDiv);
+
+        // Reset the form fields
+        reviewForm.reset();
+    });
+});
+
 });
