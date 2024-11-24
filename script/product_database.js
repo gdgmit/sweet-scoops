@@ -6,7 +6,18 @@ const products_list = [
         off: 5,
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
+        image: "images/chocolate.jpg",
+        rating: 4.5,
+        reviews: [
+            { user: "John Doe", comment: "Delicious and worth the price!", stars: 5 },
+            { user: "Jane Smith", comment: "A bit too sweet for me.", stars: 4 }
+        ],
+        nutritional_info: {
+            calories: 210,
+            fat: "10g",
+            protein: "3g",
+            carbs: "30g"
+        }
     },
     {
         id: "p002",
@@ -15,7 +26,18 @@ const products_list = [
         off: 5,
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/vannila.jpg"
+        image: "images/vannila.jpg",
+        rating: 4.8,
+        reviews: [
+            { user: "Alice Green", comment: "Smooth and creamy, perfect flavor!", stars: 5 },
+            { user: "Bob White", comment: "Excellent vanilla taste!", stars: 5 }
+        ],
+        nutritional_info: {
+            calories: 230,
+            fat: "12g",
+            protein: "4g",
+            carbs: "28g"
+        }
     },
     {
         id: "p003",
@@ -24,197 +46,18 @@ const products_list = [
         off: 5,
         price: 35,
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mango.jpg"
+        image: "images/mango.jpg",
+        rating: 4.3,
+        reviews: [
+            { user: "Charlie Brown", comment: "Classic vanilla, good texture.", stars: 4 },
+            { user: "Daisy Blue", comment: "Would buy again!", stars: 5 }
+        ],
+        nutritional_info: {
+            calories: 220,
+            fat: "11g",
+            protein: "3g",
+            carbs: "27g"
+        }
     },
-    {
-        id: "p004",
-        name: "Cookies & Cream",
-        flavor_id: "f001",
-        off: 5,
-        price: 35,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/vannila.jpg"
-    },
-    {
-        id: "p005",
-        name: "Sea Salt Caramel Gelato",
-        flavor_id: "f002",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/strawberry.jpg"
-    },
-    {
-        id: "p006",
-        name: "Stracciatella Gelato",
-        flavor_id: "f002",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/peanut-butter.jpg"
-    },
-    {
-        id: "p007",
-        name: "Pistachio Gelato",
-        flavor_id: "f002",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mango.jpg"
-    },
-    {
-        id: "p008",
-        name: "Mediterranean Mint",
-        flavor_id: "f002",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mint.jpg"
-    },
-    {
-        id: "p009",
-        name: "Raspberry Sorbetto",
-        flavor_id: "f003",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/rainbow.jpg"
-    },
-    {
-        id: "p010",
-        name: "Mango Sorbet",
-        flavor_id: "f003",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mango.jpg"
-    },
-    {
-        id: "p011",
-        name: "Berry Sorbet",
-        flavor_id: "f003",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/blue berry.jpg"
-    },
-    {
-        id: "p012",
-        name: "Lemon Sorbet",
-        flavor_id: "f003",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
-    },
-    {
-        id: "p013",
-        name: "Strawberry Sorbet",
-        flavor_id: "f003",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/strawberry.jpg"
-    },
-    {
-        id: "p014",
-        name: "Chocolate Sorbet",
-        flavor_id: "f003",
-        off: 4,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
-    },
-    {
-        id: "p015",
-        name: "Original Frozen Yogurt",
-        flavor_id: "f004",
-        off: 25,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/peanut-butter.jpg"
-    },
-    {
-        id: "p016",
-        name: "Frozen Yogurt Vanilla Bean",
-        flavor_id: "f004",
-        off: 10,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/vannila.jpg"
-    },
-    {
-        id: "p017",
-        name: " Strawberry",
-        flavor_id: "f004",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/strawberry.jpg"
-    },
-    {
-        id: "p018",
-        name: "Cake Batter",
-        flavor_id: "f004",
-        off: 12,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/rainbow.jpg"
-    },
-    {
-        id: "p019",
-        name: "Greek Yogurt",
-        flavor_id: "f004",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/vannila.jpg"
-    },
-    {
-        id: "p020",
-        name: "Pistachio",
-        flavor_id: "f004",
-        off: 1,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
-    },
-    {
-        id: "p021",
-        name: "Fudge Brownie",
-        flavor_id: "f005",
-        off: 0,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/blue berry.jpg"
-    },
-    {
-        id: "p022",
-        name: "Peanut Butter",
-        flavor_id: "f005",
-        off: 3,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/rainbow.jpg"
-    },
-    {
-        id: "p023",
-        name: "Mint Chip Dairy-Free",
-        flavor_id: "f005",
-        off: 15,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/mint.jpg"
-    },
-    {
-        id: "p024",
-        name: "Oat Milk Chocolate",
-        flavor_id: "f005",
-        off: 8,
-        price: 50,
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ad.",
-        image: "images/chocolate.jpg"
-    },
-]
-
+];
 export default products_list;

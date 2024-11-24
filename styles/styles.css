@@ -306,6 +306,22 @@ h3 {
     padding-top: 25%;
 
 }
+.ratings {
+    font-size: 1rem;
+    color: #f4b400; /* Gold star color */
+    margin: 5px 0;
+}
+.nutrition ul,
+.reviews ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+.nutrition li,
+.reviews li {
+    font-size: 0.9rem;
+    margin: 3px 0;
+}
 
 .cart .empty-cart.active {
     display: inline;
@@ -798,7 +814,7 @@ h3 {
 }
 
 .reviews .reviews-box .box:hover {
-    /* background-color: var(--secondary-color); */
+    background-color: var(--secondary-color);
 }
 
 .reviews .reviews-box .box .top {
@@ -934,12 +950,10 @@ h3 {
     color: var(--secondary-color);
     max-width: 300px;
 }
-
 .footer-col form {
     display: flex;
     gap: 5px;
 }
-
 .footer-col input {
     height: 40px;
     border-radius: 6px;
@@ -993,8 +1007,92 @@ h3 {
     text-align: center;
     border-top: 1px solid var(--secondary-color);
     padding: 10px;
-
 }
+/* Contact Page Styles */
+.contact {
+    padding: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--body-color);
+}
+
+.contact .form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contact .form-container h2 {
+    font-size: 28px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    font-family: "Pacifico", sans-serif;
+    text-align: center;
+}
+
+.contact .form-container form input,
+.contact .form-container form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid var(--ternary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Questrial", sans-serif;
+}
+
+.contact .form-container form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact .form-container form button {
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--body-color);
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact .form-container form button:hover {
+    background-color: var(--ternary-color);
+}
+
+/* Reviews Page Styles */
+.reviews {
+    padding: 50px 100px;
+    background-color: #fef8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.reviews h2 {
+    font-size: 32px;
+    color: var(--ternary-color);
+    font-family: "Spicy Rice", serif;
+    margin-bottom: 20px;
+}
+
+.reviews .reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
 /* General Styling */
 * {
     margin: 0;
@@ -1125,6 +1223,38 @@ body {
     color: #777;
 }
 
+.reviews .review-item {
+    padding: 20px;
+    border: 2px solid #0099cc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reviews .review-item h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 5px;
+    font-family: "Pacifico", sans-serif;
+}
+
+.reviews .review-item .ratings {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reviews .review-item .ratings i {
+    font-size: 18px;
+    color: #f4b400;
+}
+
+.reviews .review-item .ratings .rating-value {
+    font-size: 16px;
+    color: #444;
+}
+
 /* Review Form */
 .review-form {
     flex: 1;
@@ -1172,6 +1302,24 @@ body {
     background-color: #0f9edb;
 }
 
+/* Buttons for Reviews and Contact */
+.contact .back-to-home,
+.reviews .back-to-home {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #0f9edb;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact .back-to-home:hover,
+.reviews .back-to-home:hover {
+    background-color: #007bb5;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .reviews-container {
@@ -1184,3 +1332,4 @@ body {
         max-width: 100%;
     }
 }
+
